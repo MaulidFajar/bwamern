@@ -19,13 +19,13 @@ test("should render loading/spinner", () => {
 });
 
 test("should render <a> tag", () => {
-  const{container} = render(<Button type='Link' isExternal></Button>);
+  const{container} = render(<Button type='link' isExternal></Button>);
 
   expect(container.querySelector('a')).toBeInTheDocument();
 });
 
 test("should render <Link> component", () => {
-  const{container} = render(<Router><Button href='' type='Link'></Button></Router>);
+  const{container} = render(<Router><Button href='' type='link'></Button></Router>);
 
   expect(container.querySelector('a')).toBeInTheDocument();
 });
